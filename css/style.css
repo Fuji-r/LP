@@ -310,11 +310,11 @@ img {
     padding-top: 48px;
 }
 /* トップページに戻る */
-.top_icon h3 {
+.page_top h3 {
     width: 125px;
     position: fixed;
-    right: 14%;
-    bottom: 20%;
+    right: 2%;
+    bottom: 4%;
 }
 /* フッターカテゴリー */
 .footer-wrap {

@@ -1,15 +1,15 @@
 @charset "utf-8";
 /* リセット */
-html {
-    margin: 0;
-    padding: 0;
-}
+html,
 body {
     margin: 0;
     padding: 0;
     background-color: #e8d9bf;
 }
-header,
+header {
+    margin: 0;
+    padding: 0;
+}
 footer {
     background-color: #fff;
 }
@@ -57,9 +57,14 @@ img {
     vertical-align: bottom;
     border: none;
 }
-
-.header-container {
-    max-width: 100%;
+.header_container_wrap {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header_container {
+    max-width: 1920px;
     margin: 0 auto;
     padding-left: 3.12%;
     padding-right: 6.45%;
@@ -69,7 +74,7 @@ img {
     padding-top: 10px;
     box-sizing: border-box;
 }
-.header-container h1 {
+.header_container h1 {
     width: 226px;
 }
 .header_nav ul {
@@ -82,39 +87,32 @@ img {
     font-weight: bold;
     color: #fff;
     font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-}
-.header-container_wrap {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "sans-serif";
 }
 .slider img {
     width: 100%;
 }
 /* corporate massage */
-.container {
+.message {
     max-width: 1000px;
     margin: 0 auto;
-}
-.container h2 {
     text-align: center;
-    padding-top: 108px;
-    font-weight: lighter;
+    padding-top: 0;
 }
-.container h2 {
+.message h2 {
+    font-size: 30px;
+    padding-top: 106px;
+}
+.message h3 {
     margin: 0 auto;
-    text-align: center;
-    padding-top: 66px;
+    padding-top: 62px;
     font-size: 82px;
     font-weight: normal;
     letter-spacing: 2px;
     line-height: 1.2;
 }
-.container p {
+.message p {
     padding-top: 44px;
-    text-align: center;
     font-size: 23px;
     line-height: 1.6;
     margin-bottom: 0;
@@ -124,11 +122,13 @@ img {
     display: flex;
     margin: 0 auto;
     max-width: 1000px;
-    padding-top: 100px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1%;
 }
-.content p {
-    margin-top: -50px;
-    padding-top: 50px;
+.content {
+    width: 50%;
+    padding-top: 100px;
 }
 .content p img {
     border-radius: 0 0 84px 0;
@@ -137,14 +137,14 @@ img {
     box-sizing: border-box;
     text-align: left;
     padding-left: 9.4%;
+    padding-top: 100px;
     width: 50%;
 }
-.massage h3 {
+.massage p img {
     width: 272px;
-    padding-top: 8%;
 }
-.massage h4 {
-    padding-top: 59px;
+.massage h2 {
+    padding-top: 56px;
     font-size: 44px;
     line-height: 1.38;
     font-weight: lighter;
@@ -169,6 +169,8 @@ img {
     padding-top: 48px;
     text-align: left;
     max-width: 1000px;
+    box-sizing: border-box;
+    padding: 0 1%;
 }
 .drink {
     width: 30%;
@@ -188,6 +190,8 @@ img {
 }
 .food {
     width: 30%;
+}
+.food img {
     border-radius: 0 30px 0 0;
 }
 .food h2 {
@@ -250,7 +254,6 @@ img {
 }
 
 .day_news {
-    padding-right: 54px;
     margin: 0 auto;
     padding-bottom: 20px;
 }

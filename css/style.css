@@ -103,15 +103,14 @@ img {
     padding-top: 108px;
     font-weight: lighter;
 }
-.container h3 {
+.container h2 {
     margin: 0 auto;
     text-align: center;
     padding-top: 66px;
     font-size: 82px;
-    font-weight: lighter;
+    font-weight: normal;
     letter-spacing: 2px;
     line-height: 1.2;
-    font-feature-settings: "palt";
 }
 .container p {
     padding-top: 44px;
@@ -119,32 +118,32 @@ img {
     font-size: 23px;
     line-height: 1.6;
     margin-bottom: 0;
-    font-feature-settings: "palt";
 }
 /* About us */
 .about_us {
     display: flex;
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
     padding-top: 100px;
 }
-.content h3 {
-    width: 500px;
+.content p {
     margin-top: -50px;
     padding-top: 50px;
 }
-.content h3 img {
+.content p img {
     border-radius: 0 0 84px 0;
 }
 .massage {
+    box-sizing: border-box;
     text-align: left;
     padding-left: 9.4%;
+    width: 50%;
 }
-.massage h4 {
+.massage h3 {
     width: 272px;
     padding-top: 8%;
 }
-.massage h5 {
+.massage h4 {
     padding-top: 59px;
     font-size: 44px;
     line-height: 1.38;
@@ -160,26 +159,26 @@ img {
 }
 
 /* メニューコンテンツ */
-.menu-logo h3 {
-    width: 153px;
+.menu-logo p {
+    width: 152px;
     margin: 0 auto;
     padding-top: 108px;
 }
 .pick-up {
     margin: 0 auto;
-    padding-top: 48px;
     display: flex;
     justify-content: space-between;
+    padding-top: 48px;
     text-align: left;
-    width: 1000px;
-    line-height: 1.4;
+    max-width: 1000px;
 }
-.drink h2 img {
-    width: 300px;
+.drink {
+    width: 30%;
+}
+.drink p img {
     border-radius: 0 30px 0 0;
 }
-
-.drink h3 {
+.drink h2 {
     font-size: 38px;
     margin-top: -10px;
     padding-left: 14px;
@@ -188,16 +187,12 @@ img {
 .drink p {
     padding-top: 24px;
     line-height: 1.4;
-    font-feature-settings: "palt";
 }
 .food {
-    text-align: justify;
-}
-.food h2 img {
-    width: 300px;
+    width: 30%;
     border-radius: 0 30px 0 0;
 }
-.food h3 {
+.food h2 {
     font-size: 38px;
     margin-top: -10px;
     padding-left: 14px;
@@ -206,14 +201,14 @@ img {
 .food p {
     padding-top: 24px;
     line-height: 1.4;
-    font-feature-settings: "palt";
 }
-
-.sweets h2 img {
-    width: 300px;
+.sweets {
+    width: 30%;
+}
+.sweets p img {
     border-radius: 0 30px 0 0;
 }
-.sweets h3 {
+.sweets h2 {
     font-size: 38px;
     margin-top: -10px;
     padding-left: 14px;
@@ -222,10 +217,9 @@ img {
 .sweets p {
     padding-top: 24px;
     line-height: 1.4;
-    font-feature-settings: "palt";
 }
 /* ギャラリーのスライダー */
-.gallery-logo h3 {
+.gallery-logo p {
     width: 245px;
     margin: 0 auto;
     padding-top: 100px;
@@ -239,7 +233,7 @@ img {
     padding-bottom: 150px;
 }
 /* EVENTのコンテンツ */
-.Event-logo h3 {
+.Event-logo p {
     width: 174px;
     margin: 0 auto;
     padding-top: 70px;
@@ -250,7 +244,7 @@ img {
     justify-content: center;
     align-items: center;
     margin-top: 42px;
-    width: 1000px;
+    max-width: 1000px;
     padding-top: 37px;
     padding-bottom: 37px;
     border: 3.6px solid #4f260b;
@@ -273,7 +267,7 @@ img {
     margin-left: 56px;
 }
 /* Accessカテゴリー */
-.acces-logo h3 {
+.acces-logo h2 {
     width: 214px;
     margin: 0 auto;
     padding-top: 78px;
@@ -287,7 +281,7 @@ img {
     padding-top: 48px;
 }
 /* トップページに戻る */
-.page_top h3 {
+.page_top p {
     width: 125px;
     position: fixed;
     right: 2%;
@@ -339,4 +333,11 @@ img {
 
 /* レスポンシブ */
 @media screen and (max-width: 375px) {
+}
+.header-container_wrap {
+    position: static;
+}
+.slider {
+    width: auto;
+    height: 662px;
 }

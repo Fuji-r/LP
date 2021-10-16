@@ -148,14 +148,12 @@ img {
     font-size: 44px;
     line-height: 1.38;
     font-weight: lighter;
-    font-feature-settings: "palt";
 }
 .massage p {
     text-align: justify;
     font-size: 16px;
     line-height: 1.6;
     padding-top: 38px;
-    font-feature-settings: "palt";
 }
 
 /* メニューコンテンツ */

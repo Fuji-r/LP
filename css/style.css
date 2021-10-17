@@ -89,24 +89,22 @@ img {
     font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "sans-serif";
 }
-.slider img {
+.slider1 img {
     width: 100%;
-    padding: 0;
-    margin: 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1020px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
 }
 /* corporate massage */
-.message {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 0;
-}
 .message h2 {
     font-size: 30px;
     padding-top: 106px;
 }
 .message h3 {
-    margin: 0 auto;
     padding-top: 62px;
     font-size: 82px;
     font-weight: normal;
@@ -122,11 +120,7 @@ img {
 /* About us */
 .about_us {
     display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0 1%;
 }
 .content {
     width: 50%;
@@ -165,14 +159,10 @@ img {
     padding-top: 108px;
 }
 .pick-up {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 48px;
     text-align: left;
-    max-width: 1000px;
-    box-sizing: border-box;
-    padding: 0 1%;
 }
 .drink {
     width: 30%;
@@ -223,7 +213,7 @@ img {
     line-height: 1.4;
 }
 /* ギャラリーのスライダー */
-.gallery-logo p {
+.gallary-logo h2 {
     width: 245px;
     margin: 0 auto;
     padding-top: 100px;
@@ -237,7 +227,7 @@ img {
     padding-bottom: 150px;
 }
 /* EVENTのコンテンツ */
-.Event-logo p {
+.Event-logo h2 {
     width: 174px;
     margin: 0 auto;
     padding-top: 70px;

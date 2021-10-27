@@ -111,18 +111,21 @@ img {
 }
 
 /* corporate massage */
-.text h2 {
+.main_message {
+    text-align: center;
+}
+.message h2 {
     font-size: 30px;
     padding-top: 106px;
 }
-.text h3 {
+.message h3 {
     padding-top: 62px;
     font-size: 82px;
     font-weight: normal;
     letter-spacing: 2px;
     line-height: 1.2;
 }
-.text p {
+.message p {
     padding-top: 44px;
     font-size: 23px;
     line-height: 1.6;
@@ -139,10 +142,10 @@ img {
 }
 .content_photo img {
     border-radius: 0 0 84px 0;
+    padding-top: 18px;
 }
 .content {
     box-sizing: border-box;
-    text-align: left;
     padding-left: 9.4%;
     width: 50%;
     padding-top: 56px;
@@ -159,14 +162,11 @@ img {
 .content p {
     font-size: 16px;
     line-height: 1.6;
-    padding-top: 38px;
+    padding-top: 32px;
     text-align: justify;
 }
-.content_message_sp {
+.about_us_sp {
     display: none;
-}
-.content_messaage img {
-    display: block;
 }
 /* メニューコンテンツ */
 .menu-logo p {
@@ -179,14 +179,16 @@ img {
     justify-content: space-between;
     padding-top: 48px;
 }
-.drink {
+.menu_photo {
     width: 30%;
     align-items: flex-start;
 }
-.drink img {
-    border-radius: 0 30px 0 0;
+.menu_photo img {
+    padding-top: 24px;
+    border-radius: 0 60px 0 0;
+    width: 100%;
 }
-.drink h2 {
+.menu_photo h2 {
     margin-left: 0;
     font-size: 38px;
     margin-top: -10px;
@@ -194,39 +196,7 @@ img {
     text-align: left;
     color: #d30202;
 }
-.drink p {
-    padding-top: 24px;
-    line-height: 1.4;
-}
-.food {
-    width: 30%;
-}
-.food img {
-    border-radius: 0 30px 0 0;
-}
-.food h2 {
-    font-size: 38px;
-    margin-top: -10px;
-    padding-left: 14px;
-    color: #d30202;
-}
-.food p {
-    padding-top: 24px;
-    line-height: 1.4;
-}
-.sweets {
-    width: 30%;
-}
-.sweets img {
-    border-radius: 0 30px 0 0;
-}
-.sweets h2 {
-    font-size: 38px;
-    margin-top: -10px;
-    padding-left: 14px;
-    color: #d30202;
-}
-.sweets p {
+.text {
     padding-top: 24px;
     line-height: 1.4;
 }
@@ -431,85 +401,66 @@ img {
 }
 /* レスポンシブ */
 @media screen and (max-width: 767px) {
-    .text h3 {
-    font-size: 4.7rem;
+    .message h3 {
+        font-size: 8.7vw;
+        text-align: center;
+    }
+    .message p {
+        font-size: 4.3vw;
+    }
+    .about_us {
+        display: block;
+        margin: 0 auto;
+    }
+    .about_us_sp {
+        display: block;
+        margin: auto;
+    }
+    .title_logo {
+        width: 42.6vw;
+        margin: 0 auto;
+    }
+    .main_photo {
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+    }
+    .content_photo {
+        display: none;
+    }
+    .content img {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 36px;
+    }
+    .content p {
+        text-align: start;
     }
     .br_sp {
         display: block;
     }
-    .about_us {
-    display: block;
-    margin: 0 auto;
-    }
-    .content {
-        width: 100%;
-        margin: 0 auto;
-        padding-left: 0;
-    }
-    .content_photo {
-        width: 272px;
-        margin: 0 auto;
-    }
-    .content_photo img {
-        border-radius: 0;
-        display: block;
-        margin: 0 auto;
-    }
-    .content img {
-        width: 100vw;
-        margin: 0 colc(50%-50vw);
-        
-    }
-    .Menu-contenr {
-        width: 100%;
-    }  
     .pick-up {
         display: block;
         margin: 0 auto;
     }
+    .menu_photo {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .menu_photo h2 {
+        padding-bottom: 32px;
+    }
+    .text2 {
+        text-align: left;
+        padding-bottom: 60px;
+        font-size: 17px;
+        line-height: 1.2;
+    }
     .pick-up br {
         display: none;
-    }
-    .drink {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    .drink h2 {
-        width: 100%;
-        padding-left: 12%;
-    }
-    .drink p {
-        padding-left: 6.4%;
-    }
-    .food {
-        padding-top: 60px;
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    .food h2 {
-        width: 34%;
-    }
-    .sweets {
-        width: 100%;
-        text-align: center;
-        padding-top: 60px;
-    }
-    .sweets h2 {
-        width: 100%;
-        text-align: left;
-        padding-left: 6.4%;
-    }
-    .sweets p {
-        padding-left: 6.4%;
-    }
-    .pick-up img {
-        margin: 0 auto;
-        align-items: center;
-    }
-    .topics {
-        width: 90%;
     }
     .day_news {
         display: none;
@@ -535,4 +486,10 @@ img {
     .acces_adress li {
         padding-left: 5%;
     }
-}   
+    .page_top P {
+        width: 20%;
+        position: fixed;
+        right: 2%;
+        bottom: 4%;
+    }
+}

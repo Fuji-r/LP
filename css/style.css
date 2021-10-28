@@ -33,6 +33,9 @@ dl {
         "ＭＳ 明朝", "serif";
     font-feature-settings: "palt";
 }
+.body {
+    background: #444;
+}
 
 a {
     /*下線を消す*/
@@ -61,6 +64,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 .header_container {
     max-width: 1920px;
@@ -87,6 +91,29 @@ img {
     color: #fff;
     font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "sans-serif";
+}
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #fff;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-next {
+    display: none;
+}
+.slick-next {
+    display: none !important;
 }
 /* スライダー */
 .slider1 img {
@@ -184,7 +211,6 @@ img {
     align-items: flex-start;
 }
 .menu_photo img {
-    padding-top: 24px;
     border-radius: 0 60px 0 0;
     width: 100%;
 }
@@ -196,15 +222,16 @@ img {
     text-align: left;
     color: #d30202;
 }
-.text {
+.text2 {
     padding-top: 24px;
     line-height: 1.4;
+    width: 100%;
 }
 /* ギャラリーのスライダー */
 .gallary {
     background: #e8d9bf;
 }
-.gallary-logo h2 {
+.gallary-logo p {
     width: 245px;
     margin: 0 auto;
     padding-top: 100px;
@@ -399,30 +426,44 @@ img {
         text-align: center;
     }
 }
-/* レスポンシブ */
+/* レスポンシブ_767px */
 @media screen and (max-width: 767px) {
+    .message h2 {
+        font-size: 4.2vw;
+        width: 100%;
+        font-weight: lighter;
+        padding-top: 42px;
+    }
     .message h3 {
         font-size: 8.7vw;
         text-align: center;
+        padding-top: 40px;
     }
     .message p {
-        font-size: 4.3vw;
+        font-size: 4.2vw;
+        font-weight: lighter;
+        white-space: normal;
+        padding-top: 24px;
     }
     .about_us {
         display: block;
         margin: 0 auto;
+        padding-top: 66px;
     }
     .about_us_sp {
         display: block;
-        margin: auto;
     }
     .title_logo {
-        width: 42.6vw;
+        width: 180px;
         margin: 0 auto;
+        padding-bottom: 18px;
+    }
+    .content_photo {
+        display: none;
     }
     .main_photo {
-        margin: 0 calc(50% - 50vw);
         width: 100vw;
+        margin: 0 calc(50% - 50vw);
     }
     .content_photo {
         display: none;
@@ -436,31 +477,50 @@ img {
         padding-left: 0;
         padding-top: 36px;
     }
+    .content h2 {
+        font-size: 9vw;
+        padding-top: 36px;
+    }
     .content p {
-        text-align: start;
+        padding-top: 32px;
     }
     .br_sp {
         display: block;
     }
+    .menu-logo p {
+        width: 87px;
+        margin: 0 auto;
+        padding-top: 56px;
+        padding-bottom: 23px;
+    }
     .pick-up {
         display: block;
         margin: 0 auto;
+        padding-top: 0;
     }
     .menu_photo {
-        width: 93%;
+        width: 90%;
         margin: 0 auto;
-    }
-    .menu_photo h2 {
-        padding-bottom: 32px;
     }
     .text2 {
         text-align: left;
         padding-bottom: 60px;
         font-size: 17px;
-        line-height: 1.2;
+        line-height: 1.5;
     }
     .pick-up br {
         display: none;
+    }
+    .gallary-logo p {
+        width: 142px;
+        margin: 0 auto;
+    }
+    .Event-logo h2 {
+        width: 100px;
+        padding-bottom: 20px;
+    }
+    .topics {
+        margin-top: 0;
     }
     .day_news {
         display: none;
@@ -482,6 +542,9 @@ img {
         padding-top: 50px;
         padding-bottom: 36px;
         padding-left: 5%;
+    }
+    .acces-logo h2 {
+        width: 142px;
     }
     .acces_adress li {
         padding-left: 5%;

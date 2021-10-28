@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="designcafe" content="デザインしたカフェができました">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <meta name="discription" content="デザインしたカフェができました">
+    
 </head>
 
 <body>
@@ -44,6 +48,12 @@
             <img src="images/pc_first-100.jpg" alt="デザインカフェの様子">
             </picture>
         </div>
+        <div>
+            <picture>
+            <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width: 767px)"/>
+            <img src="images/slider_2.jpg" alt="デザインカフェの様子">
+            </picture>
+        </div>
     </div>
     </header>
     <div class="main">
@@ -52,7 +62,7 @@
             <section class="main_message">
                 <div class="message">
                     <h2>Have a happy day From a cup of coffe.</h2>
-                    <h3>ハッピーに溢れる1日を<br>1杯のコーヒーから</h3>
+                    <h3>ハッピーに溢れる1日を<br>1杯のコーヒーから。</h3>
                     <p>毎日を丁寧に大切に過ごしたい。<br class="br_sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br class="br_sp">こだわりのコーヒーを提供したい。</p>
                 </div>
             </section>
@@ -80,10 +90,7 @@
                 </div>
                 <div class="pick-up">
                     <div class="menu_photo">
-                        <picture>
-                            <source srcset="images/drink_sp@2x-100.jpg" media="(max-width: 767px)"/>
-                            <img src="images/pc_menu_drink-100.jpg" alt="飲み物の写真">
-                        </picture>
+                        <p class="drink_photo"><img src="images/pc_menu_drink-100.jpg" alt="飲み物の写真"></p>
                         <h2>Drink</h2>
                         <p class="text2">ドリンクメニューの概要を100文字程度で<br>紹介します。素材やこだわりなどをアピー<br>ルしていきます。</p>
                     </div>
@@ -104,7 +111,7 @@
         <!--ギャラリーコンテンツ-->
     <section class="gallary">
         <div class="gallary-logo">
-            <h2 id="Gallary"><img src="images/gallery@2x.png" alt="ギャラリーのロゴ"></h2>
+            <P id="Gallary"><img src="images/gallery@2x.png" alt="ギャラリーのロゴ"></P>
         </div>
         <div class="sp">
             <p>ここにスライドが入ります。</p>
@@ -171,6 +178,11 @@
                 $(".sp_menu_btn").toggleClass('open');
                 $(".sp_nav").fadeToggle();
             });
+            $('.slider1').slick({
+            autoplaySpeed: 2000,
+            autoplay: true,
+            dots: true
+        });
         });
     </script>
 

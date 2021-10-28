@@ -228,10 +228,10 @@ img {
     width: 100%;
 }
 /* ギャラリーのスライダー */
-.gallary {
+.gallery {
     background: #e8d9bf;
 }
-.gallary-logo p {
+.gallery-logo p {
     width: 245px;
     margin: 0 auto;
     padding-top: 100px;
@@ -511,7 +511,7 @@ img {
     .pick-up br {
         display: none;
     }
-    .gallary-logo p {
+    .gallery-logo p {
         width: 142px;
         margin: 0 auto;
     }

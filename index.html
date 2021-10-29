@@ -114,23 +114,6 @@
         <div class="gallery-logo">
             <P id="Gallery"><img src="images/gallery@2x.png" alt="ギャラリーのロゴ"></P>
         </div>
-        <!--         <div class="slider slide">
-            <ul class="slider slider2 slick-initialized slick-slider">
-                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" styl></button>
-                </button>
-                <div class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 1430px; transform: translate3d(-110px, 0px, 0px);">
-                        <div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 110px;">
-                            <a href="images/pc_gallary_01-100.jpg" data-title="マグカップ" tabindex="-1"><img src="images/pc_gallary_01-100.jpg" alt></a>
-                        </div>
-                        <di class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 399px;">
-                            <a href="#" tabindex="-1"><img src="images/pc_gallary_02-100.jpg" alt="image01"></a></di>
-                        <li class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" tabindex="-1" style="width: 1375px;">
-                            <a href="#" tabindex="-1"><img src="images/01.jpg" alt="image01"></a></li>
-                    </div>
-                </div>
-            </ul>
-        </div> -->
         <div class="slider2">
             <div>
                 <a href="images/pc_gallary_01-100.jpg" data-lightbox="gallery" data-title="マグカップ"><img src="images/pc_gallary_01-100.jpg" alt=""></a>
@@ -143,6 +126,9 @@
             </div>
             <div>
                 <a href="images/pc_gallary_04-100.jpg" data-lightbox="gallery" data-title="コーヒ豆"><img src="images/pc_gallary_04-100.jpg" alt=""></a>
+            </div>
+            <div>
+                <a href="images/pc_gallary_05-100.jpg" data-lightbox="gallery" data-title="店内写真2"><img src="images/pc_gallary_05-100.jpg" alt=""></a>
             </div>
             <div>
                 <a href="images/pc_gallary_05-100.jpg" data-lightbox="gallery" data-title="店内写真2"><img src="images/pc_gallary_05-100.jpg" alt=""></a>
@@ -220,10 +206,9 @@
         // jqueryとレスポンシブ
         $(document).ready(function(){
             $(".slider2").slick({
-            slidesToshow: 5,
+            slidesToShow: 5,
             slidesToScroll: 1,
-            dots: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 3000,
             autoplay: true,
             infinite: true,
             responsive:[{

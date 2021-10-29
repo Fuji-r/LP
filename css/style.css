@@ -514,11 +514,13 @@ img {
     .gallery-logo p {
         width: 142px;
         margin: 0 auto;
-        padding-top: 21px;
+        padding-top: 96px;
+
     }
     .slider2 img {
         width: 100%;
         height: auto;
+        padding-top: 21px;
     }
     .slick-prev:before,
     .slick-next:before {

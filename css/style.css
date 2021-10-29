@@ -181,7 +181,6 @@ img {
     width: 272px;
 }
 .content h2 {
-    padding-top: 56px;
     font-size: 44px;
     line-height: 1.38;
     font-weight: lighter;
@@ -244,6 +243,12 @@ img {
     padding-top: 150px;
     padding-bottom: 150px;
 }
+.slider2 {
+    display: flex;
+}
+.slider2 source {
+    display: none;
+}
 /* EVENTのコンテンツ */
 .Event {
     background: #e8d9bf;
@@ -295,7 +300,6 @@ img {
     height: 420px;
 }
 .map {
-    width: 100%;
     padding-top: 48px;
 }
 /* トップページに戻る */
@@ -337,11 +341,12 @@ img {
     width: 224px;
     padding-top: 0;
 }
-.acces_adress li {
+.acces_adress {
     max-width: 100%;
     padding-top: 6px;
     padding-left: 48px;
     padding-bottom: 20px;
+    text-align: left;
 }
 .footer-write {
     text-align: center;
@@ -422,12 +427,10 @@ img {
         font-size: 30px;
         padding: 20px 0;
     }
-    .text {
-        text-align: center;
-    }
 }
 /* レスポンシブ_767px */
 @media screen and (max-width: 767px) {
+    /* こーポレートメッセージ */
     .message h2 {
         font-size: 4.2vw;
         width: 100%;
@@ -437,7 +440,7 @@ img {
     .message h3 {
         font-size: 8.7vw;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 35px;
     }
     .message p {
         font-size: 4.2vw;
@@ -445,6 +448,7 @@ img {
         white-space: normal;
         padding-top: 24px;
     }
+    /* about_us */
     .about_us {
         display: block;
         margin: 0 auto;
@@ -454,19 +458,16 @@ img {
         display: block;
     }
     .title_logo {
-        width: 180px;
+        width: 160px;
         margin: 0 auto;
-        padding-bottom: 18px;
     }
     .content_photo {
         display: none;
     }
     .main_photo {
+        padding-top: 18px;
         width: 100vw;
         margin: 0 calc(50% - 50vw);
-    }
-    .content_photo {
-        display: none;
     }
     .content img {
         display: none;
@@ -475,21 +476,16 @@ img {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
-        padding-top: 36px;
     }
     .content h2 {
         font-size: 9vw;
-        padding-top: 36px;
     }
     .content p {
-        padding-top: 32px;
+        padding-top: 36px;
     }
-    .br_sp {
-        display: block;
-    }
+    /* メニューコンテンツ */
     .menu-logo p {
         width: 87px;
-        margin: 0 auto;
         padding-top: 56px;
         padding-bottom: 23px;
     }
@@ -502,57 +498,104 @@ img {
         width: 90%;
         margin: 0 auto;
     }
+    .menu_photo h2 {
+        font-size: 40px;
+    }
     .text2 {
         text-align: left;
-        padding-bottom: 60px;
+        padding-bottom: 72px;
         font-size: 17px;
         line-height: 1.5;
     }
     .pick-up br {
         display: none;
     }
+    /* ギャラリー */
     .gallery-logo p {
         width: 142px;
         margin: 0 auto;
+        padding-top: 21px;
+    }
+    .slider2 img {
+        width: 100%;
+        height: auto;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: #000;
+    }
+    /* イベント */
+    .topics {
+        width: 90%;
     }
     .Event-logo h2 {
         width: 100px;
-        padding-bottom: 20px;
+        padding-top: 34px;
     }
     .topics {
-        margin-top: 0;
+        margin-top: 21px;
     }
     .day_news {
         display: none;
     }
     .day_news_sp {
-        display: block;
+        display: inline-block;
+        flex-flow: column;
+        justify-content: space-between;
     }
     .day_news_sp li {
+        line-height: 1.5;
         text-align: left;
-        padding: 5px;
+        font-size: 16px;
+        margin-bottom: 13.5px;
     }
+    .day_news_sp li span {
+        text-decoration: underline;
+    }
+    /* アクセスカテゴリー */
     .map {
-        margin-top: -40px;
-    }
-    .footer-wrap {
-        display: block;
-    }
-    .shop-logo h2 {
-        padding-top: 50px;
-        padding-bottom: 36px;
-        padding-left: 5%;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
     }
     .acces-logo h2 {
         width: 142px;
+        padding-top: 33px;
     }
-    .acces_adress li {
-        padding-left: 5%;
+    .map iframe {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        padding-top: 12px;
     }
+    /* page_top */
     .page_top P {
-        width: 20%;
+        width: 100px;
         position: fixed;
         right: 2%;
         bottom: 4%;
+    }
+    /* フッター */
+    .footer-wrap {
+        display: block;
+        padding-left: 5%;
+        padding-top: 48px;
+    }
+    .shop-logo h2 {
+        width: 226px;
+    }
+    .acces_adress {
+        padding-left: 0;
+        font-size: 17px;
+        padding-top: 33px;
+    }
+    .acces_adress li {
+        padding-bottom: 16px;
+    }
+    .footer-write {
+        padding-top: 43px 0 33px 0;
     }
 }

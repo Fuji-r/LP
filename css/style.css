@@ -515,16 +515,11 @@ img {
         width: 142px;
         margin: 0 auto;
         padding-top: 96px;
-
     }
     .slider2 img {
         width: 100%;
         height: auto;
         padding-top: 21px;
-    }
-    .slick-prev:before,
-    .slick-next:before {
-        color: #000;
     }
     /* イベント */
     .topics {
@@ -598,6 +593,6 @@ img {
         padding-bottom: 16px;
     }
     .footer-write {
-        padding-top: 43px 0 33px 0;
+        padding: 43px 0 33px 0;
     }
 }

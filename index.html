@@ -193,33 +193,39 @@
 
     <script>
         $(function() {
+            // headerのメニューの被せ方
             $(".sp_menu_btn,.sp_nav li a").click(function (){
                 $(".sp_menu_btn").toggleClass('open');
                 $(".sp_nav").fadeToggle();
             });
+            // スライドの流し方
             $('.slider1').slick({
             autoplaySpeed: 2000,
             autoplay: true,
             dots: true
             });
-        });
-        // jqueryとレスポンシブ
-        $(document).ready(function(){
-            $(".slider2").slick({
+            // レスポンシブしたときのスライド _767
+            var windowWidth = window.innerWidth;
+            if(windowWidth > 767){
+            $('.slider2').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
             autoplaySpeed: 3000,
             autoplay: true,
-            infinite: true,
-            responsive:[{
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            }]
-        }); 
-        })
+            infinite: true
+            });
+            }
+            else {
+            $('.slider2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 3000,
+            autoplay: true,
+            infinite: true
+            });
+            }
+        });
+        // jqueryとレスポンシブ;
     </script>
 
 

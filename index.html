@@ -205,20 +205,25 @@
             dots: true
             });
             // レスポンシブしたときのスライド _767
-            $(".slider2").slick({
+            var windowWidth = window.innerWidth;
+            if(windowWidth > 767){
+            $('.slider2').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
             autoplaySpeed: 3000,
             autoplay: true,
-            infinite: true,
-            responsive:[{
-                breakpoint: 767,
-                settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                }
-            }]
-        }); 
+            infinite: true
+            });
+            }
+            else {
+            $('.slider2').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 3000,
+            autoplay: true,
+            infinite: true
+            });
+            }
         });
         // jqueryとレスポンシブ;
     </script>

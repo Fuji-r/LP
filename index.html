@@ -224,6 +224,18 @@
             infinite: true
             });
             }
+<<<<<<< Updated upstream
+=======
+            // スムーススクロール
+            $('a[href^="#"]').click(function(){
+                let speed = 300;
+                let href= $(this).attr("href");
+                let target = $(href == "#" || href == "" ? 'html' : href);
+                let position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+>>>>>>> Stashed changes
         });
         // jqueryとレスポンシブ;
     </script>

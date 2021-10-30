@@ -236,7 +236,6 @@ img {
     padding-top: 100px;
 }
 .sp p {
-    margin-top: 26px;
     background-color: gainsboro;
     width: 100%;
     text-align: center;
@@ -345,13 +344,16 @@ img {
     max-width: 100%;
     padding-top: 6px;
     padding-left: 48px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     text-align: left;
+}
+.acces_adress li {
+    padding-bottom: 24px;
 }
 .footer-write {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 78px;
+    padding-top: 78px;
+    padding-bottom: 80px;
     background: #fff;
 }
 
@@ -514,12 +516,15 @@ img {
     .gallery-logo p {
         width: 142px;
         margin: 0 auto;
+<<<<<<< Updated upstream
         padding-top: 96px;
+=======
+        padding-top: 8px;
+>>>>>>> Stashed changes
     }
     .slider2 img {
         width: 100%;
         height: auto;
-        padding-top: 21px;
     }
     /* イベント */
     .topics {

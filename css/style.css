@@ -233,7 +233,6 @@ img {
 .gallery-logo h2 {
     width: 245px;
     margin: 0 auto;
-    padding-top: 100px;
 }
 .sp p {
     margin-top: 26px;
@@ -517,7 +516,7 @@ img {
     .gallery-logo h2 {
         width: 142px;
         margin: 0 auto;
-        padding-top: 96px;
+        padding-top: 24px;
     }
     .slider2 img {
         width: 100%;

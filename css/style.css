@@ -230,7 +230,7 @@ img {
 .gallery {
     background: #e8d9bf;
 }
-.gallery-logo p {
+.gallery-logo h2 {
     width: 245px;
     margin: 0 auto;
     padding-top: 100px;
@@ -342,15 +342,18 @@ img {
     padding-top: 0;
 }
 .acces_adress {
-    max-width: 100%;
+    width: 100%;
     padding-top: 6px;
     padding-left: 48px;
     padding-bottom: 20px;
     text-align: left;
 }
+.acces_adress li {
+    padding-bottom: 22px;
+}
 .footer-write {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 37px;
     padding-bottom: 78px;
     background: #fff;
 }
@@ -430,7 +433,7 @@ img {
 }
 /* レスポンシブ_767px */
 @media screen and (max-width: 767px) {
-    /* こーポレートメッセージ */
+    /* コーポレートメッセージ */
     .message h2 {
         font-size: 4.2vw;
         width: 100%;
@@ -511,7 +514,7 @@ img {
         display: none;
     }
     /* ギャラリー */
-    .gallery-logo p {
+    .gallery-logo h2 {
         width: 142px;
         margin: 0 auto;
         padding-top: 96px;
